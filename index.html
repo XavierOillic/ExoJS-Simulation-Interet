@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="/script.js" defer></script>
+    <link href="/style.css" rel="stylesheet" />
+    <link
+      rel="icon"
+      size="48x48"
+      href="./images/favicon.ico"
+    />
+    <title>Simulation Bancaire</title>
+  </head>
+  <body>
+
+    <header id="entete">
+      <h1 id="gros_titre">FAITES VOUS VOTRE SIMULATION BANCAIRE</h1>
+    </header>
+
+    <content>
+        <form onsubmit="CalculProfit(event)">
+
+            <h3>Inscrivez la Somme que vous souhaitez voir prosperer :</h3>
+                <label>Votre Dépôt : </label>
+                    <input id ="deposit_input" type ="number" placeholder=" =>  ICI !   " name="Deposit" size="8"/></input>
+                
+            <h3>Incrivez le Taux d'interet que vous souhaiteriez avoir...</h3>
+                <label>Votre Taux d'interêt souhaité : </label>
+                    <input id="rate_input" type ="number" placeholder=" =>  ICI !   " name="Rate" size="8"/></input>
+            
+            <h3>Incrivez votre Objectif</h2>
+                <label>Votre Objectif : </label>
+                    <input id="threshold_input" type ="number" placeholder=" =>  ICI !   "name="Threshold" size="8"/> </input>                   
+                       
+            <h3>Vous obtiendrez la somme désirée en tant d'année :</h3>
+                <label>Resultat :        </label>
+                    <div id="resultat_ouput"></div> €
+                    <input id="bouton_calcul" type="submit" onclick="" value="Click Here !"> Calcul HERE !</input>
+                
+            <!--<button id="bouton_calcul"> CLIQUEZ ICI !</button>-->
+        </form>
+    
+    </content>
+  </body>
+</html>
+
+
+        
+        
+     
+       

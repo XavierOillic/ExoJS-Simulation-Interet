@@ -1,0 +1,23 @@
+ body { 
+    margin-left: auto;
+  margin-right: auto;*/
+  background-color: rgb(228, 229, 231);
+  top: 10px;
+  position: sticky;
+  display: grid;
+  /*grid-template-columns: 40px 50px auto 50px 40px;
+  grid-template-rows: 25% 100px auto;*/
+}
+p h1 h2 {
+  font-size: arial;
+}
+#entete {
+  background-color: blueviolet;
+}
+
+#resultat_output {
+    display: inline;
+  background-color: blue;
+  max-height: 100%;
+  max-width: 100%;
+}
