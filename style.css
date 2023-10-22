@@ -1,23 +1,87 @@
- body { 
-    margin-left: auto;
-  margin-right: auto;*/
-  background-color: rgb(228, 229, 231);
-  top: 10px;
-  position: sticky;
+body {
+  margin: auto;
+  background-color: rgb(197, 205, 212);
+}
+content {
   display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 3%;
+  grid-auto-rows: 30%;
+  grid-template-areas:
+    ". . . ."
+    ". a a ."
+    ". b b ."
+    ". b b ."
+    ". b b ."
+    ". . . .";
+  align-items: center;
   /*grid-template-columns: 40px 50px auto 50px 40px;
   grid-template-rows: 25% 100px auto;*/
 }
-p h1 h2 {
-  font-size: arial;
+header {
+  grid-area: a;
+}
+
+#chiffrage {
+  grid-area: b;
+  height: 100%;
+  width: 100%;
+  align-self: center;
+  justify-self: center;
+  background-color: aqua;
+}
+h1 h2 {
+  font-family: arial;
+  font-size: 10px;
+}
+p {
+  font-family: arial;
 }
 #entete {
   background-color: blueviolet;
 }
 
-#resultat_output {
-    display: inline;
-  background-color: blue;
-  max-height: 100%;
-  max-width: 100%;
+#le_form {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10%;
+  grid-auto-rows: 20%;
+  grid-template-areas:
+    ". . . ."
+    ". a b ."
+    ". c d ."
+    ". . . .";
+  align-items: center;
+}
+
+#div_depot {
+  grid-area: a;
+  background-color: rgb(8, 144, 98);
+}
+#div_rate {
+  grid-area: b;
+  background-color: rgb(8, 144, 98);
+}
+#div_objectif {
+  grid-area: c;
+  background-color: rgb(8, 144, 98);
+}
+#div_resultat {
+  grid-area: d;
+  background-color: rgb(8, 144, 98);
+}
+
+#deposit_input {
+  width: 70%;
+}
+#rate_input {
+  width: 70%;
+}
+#threshold_input {
+  width: 70%;
+}
+#resultat_ouput {
+  background-color: brown;
+  height: 100%;
+  width: 50%;
 }

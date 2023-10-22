@@ -13,34 +13,44 @@
     <title>Simulation Bancaire</title>
   </head>
   <body>
+    <content>
 
     <header id="entete">
       <h1 id="gros_titre">FAITES VOUS VOTRE SIMULATION BANCAIRE</h1>
     </header>
 
-    <content>
-        <form onsubmit="CalculProfit(event)">
+    <div id="chiffrage">
 
-            <h3>Inscrivez la Somme que vous souhaitez voir prosperer :</h3>
-                <label>Votre Dépôt : </label>
-                    <input id ="deposit_input" type ="number" placeholder=" =>  ICI !   " name="Deposit" size="8"/></input>
-                
-            <h3>Incrivez le Taux d'interet que vous souhaiteriez avoir...</h3>
-                <label>Votre Taux d'interêt souhaité : </label>
-                    <input id="rate_input" type ="number" placeholder=" =>  ICI !   " name="Rate" size="8"/></input>
+
+        <form id="le_form" onsubmit="CalculProfit(event)">
+            <div id="div_depot">
+              <h3>DEPOSIT</h3>
+                <label id="deposit_label">Your Deposit : </label>
+                    <input id ="deposit_input" type ="number" placeholder=" => ICI !" name="Deposit" size="5"/></input>
+            </div>
+
+            <div id="div_rate">   
+              <h3>RATE</h3>
+                <label id="rate_label">Your desired Rate :</label>
+                    <input id="rate_input" type ="number" placeholder=" => ICI !" name="Rate" size="5"/></input>
+            </div>
+
+            <div id="div_objectif">
+              <h3>OBJECTIVE</h2>
+                <label id="objectif_label">At the end...</label>
+                    <input id="threshold_input" type ="number" placeholder=" => ICI !"name="Threshold" size="5"/> </input>                   
+            </div>           
             
-            <h3>Incrivez votre Objectif</h2>
-                <label>Votre Objectif : </label>
-                    <input id="threshold_input" type ="number" placeholder=" =>  ICI !   "name="Threshold" size="8"/> </input>                   
-                       
-            <h3>Vous obtiendrez la somme désirée en tant d'année :</h3>
-                <label>Resultat :        </label>
+            <div id="div_resultat">
+              <h3>DREAMING...</h3>
+                <label id="resultat_label">Result :        </label>
                     <div id="resultat_ouput"></div> €
-                    <input id="bouton_calcul" type="submit" onclick="" value="Click Here !"> Calcul HERE !</input>
-                
-            <!--<button id="bouton_calcul"> CLIQUEZ ICI !</button>-->
+                    <input id="bouton_calcul" type="submit" onclick="" value="Click Here !"></input>
+            </div>   
         </form>
+      
     
+      </div>
     </content>
   </body>
 </html>

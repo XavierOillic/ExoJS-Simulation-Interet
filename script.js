@@ -23,12 +23,7 @@ function CalculProfit(event) {
 
 
 
-
-
-
- //console.log(resultatOuput.innerHTML = `Vous en avez pour toutes ces années avant de gagner qq copecs ${nbAnnee}`); 
-
-
+/*
  const calculProfit = (event) => {
     event.preventDefault()
   
@@ -46,3 +41,4 @@ function CalculProfit(event) {
   
     document.getElementById('resultat_ouput').innerHTML = `${nbAnnee}`
 }
+*/
