@@ -15,10 +15,12 @@ function CalculProfit(event) {
         solde += (solde * rate) / 100;     // SOLDE = SOLDE * RATE, SOLDE S1 = SOLDE S2* RATE,...
     } while (solde < threshold);           // TANT QUE MON SOLDE S + S1*rate, ... < THRESHOLD.
 
-   return document.getElementById('resultat_ouput').innerHTML = `${nbAnnee}`;
+   return document.getElementById('resultat_ouput').innerHTML = `${nbAnnee} ANS`;
 
     // return nbAnnee;                        // Je retourne le nombre d'année: LE RETURN STOPPE LA FONCTION !.
 };
+
+
 
 
 
