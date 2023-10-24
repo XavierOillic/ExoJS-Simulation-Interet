@@ -1,5 +1,7 @@
 body {
   margin: auto;
+  width: 100%;
+  height: 100%;
   background-color: rgb(163, 164, 164);
 }
 
@@ -17,15 +19,16 @@ header {
   text-align: center;
   border-radius: 10px;
   border: 2px solid rgb(168, 127, 23);
+  font-family: arial;
 }
 content {
+  margin-top: 6%;
   left: 10%;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-gap: 3%;
   grid-auto-rows: 30%;
   grid-template-areas:
-    ". . . . ."
     "e a a a ."
     ". b b b ."
     ". b b b ."
@@ -36,6 +39,7 @@ content {
 }
 #logo {
   grid-area: e;
+  margin-bottom: 15%;
 }
 
 #chiffrage {
@@ -54,6 +58,9 @@ content {
 h1 h2 {
   font-family: arial;
   font-size: 10px;
+}
+h3 {
+  font-size: 110%;
 }
 p {
   font-family: arial;
@@ -82,6 +89,7 @@ p {
   text-align: center;
   background-color: rgb(126, 135, 175);
   padding-bottom: 10%;
+  border-radius: 5px;
 }
 #div_rate {
   height: auto;
@@ -90,6 +98,7 @@ p {
   text-align: center;
   background-color: rgb(126, 135, 175);
   padding-bottom: 10%;
+  border-radius: 5px;
 }
 #div_objectif {
   height: auto;
@@ -98,6 +107,7 @@ p {
   text-align: center;
   background-color: rgb(126, 135, 175);
   padding-bottom: 10%;
+  border-radius: 5px;
 }
 #div_resultat {
   height: auto;
@@ -106,22 +116,59 @@ p {
   text-align: center;
   background-color: rgb(126, 135, 175);
   padding-bottom: 10%;
+  border-radius: 5px;
+}
+input {
+  width: 70%;
+  height: 120%;
 }
 
 #deposit_input {
-  width: 70%;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 10%;
+  border: 1px solid black;
 }
 #rate_input {
-  width: 70%;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 10%;
+  border: 1px solid black;
 }
 #threshold_input {
-  width: 70%;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 10%;
+  border: 1px solid black;
 }
+
 #resultat_ouput {
   font-size: 20px;
   color: #ffffff;
   justify-content: flex-start;
   background-color: rgb(168, 127, 23);
+  margin-top: 9%;
   height: 140%;
   width: 100%;
+}
+
+#bouton_calcul {
+  background-color: rgb(28, 32, 52);
+  color: #ffffff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  width: 60%;
+  height: 120%;
+}
+
+@media screen and (max-width: 640px) {
+  /* phone < 640px */
+  div#deposit_input,
+  div#rate_input,
+  div#threshold_input,
+  #resultat_ouput {
+    float: none;
+    clear: both;
+    width: 100%;
+    height: 100%;
+  }
 }

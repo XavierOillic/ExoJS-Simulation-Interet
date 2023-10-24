@@ -17,13 +17,14 @@
     <div id="logo" class="Home_back"><a href="index.html"><img src="./images/logo.png" width="40%" height="40%"/></a></div>
 
     <header id="entete">
-      <h1 id="gros_titre">FAITES VOUS VOTRE SIMULATION D'INTERET...</h1>
+      <h1 id="gros_titre">FAITES VOUS VOTRE SIMULATION D'INTERET... </br> En combien d'années allez vous obtenir la somme désirée ?</h1>
     </header>
 
     <div id="chiffrage">
 
 
         <form id="le_form" onsubmit="CalculProfit(event)">
+<!-- ONSUBMIT est un EVENT donc en PARAMETRE de ONSUBMIT aussi-->
             <div id="div_depot">
               <h3>DEPOSIT</h3>
                 <label id="deposit_label">Your Deposit : </label>
@@ -46,7 +47,8 @@
               <h3>DREAMING...</h3>
                 <label id="resultat_label">RESULT :        </label>
                     <div id="resultat_ouput"></div> 
-                    <input id="bouton_calcul" type="submit" onclick="" value="Click Here !"></input>
+                    <input id="bouton_calcul" type="submit" onclick="" value="CLICK HERE !"></input>
+<!-- ONSUBMIT a OBLIGATOIREMENT BESOIN D'UN SUBMIT pour terminer la requete du FORM-->
             </div>   
         </form>
       
