@@ -15,7 +15,7 @@ header {
   box-shadow: 5px 5px 5px rgb(103, 103, 105),
     -0.5em -0.5em 2em rgb(102, 112, 112);
   background-color: #ffffff;
-  font-size: 70%;
+  font-size: 30px;
   text-align: center;
   border-radius: 10px;
   border: 2px solid rgb(168, 127, 23);
@@ -124,18 +124,21 @@ input {
 }
 
 #deposit_input {
+  max-width: 100%;
   text-align: center;
   font-weight: bold;
   margin-top: 10%;
   border: 1px solid black;
 }
 #rate_input {
+  max-width: 100%;
   text-align: center;
   font-weight: bold;
   margin-top: 10%;
   border: 1px solid black;
 }
 #threshold_input {
+  max-width: 100%;
   text-align: center;
   font-weight: bold;
   margin-top: 10%;
@@ -143,6 +146,7 @@ input {
 }
 
 #resultat_ouput {
+  max-width: 100%;
   font-size: 20px;
   color: #ffffff;
   justify-content: flex-start;
@@ -160,15 +164,27 @@ input {
   height: 120%;
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (min-width: 480px) {
   /* phone < 640px */
-  div#deposit_input,
-  div#rate_input,
-  div#threshold_input,
-  #resultat_ouput {
-    float: none;
-    clear: both;
-    width: 100%;
-    height: 100%;
+  h3,
+  p,
+  input {
+    font-size: 14px;
   }
 }
+
+@media (min-width: 480px) {
+  h1,
+  h2 {
+    font-size: 18px;
+  }
+}
+/* PERMET DE METTRE LES DIV LES UNES EN DESSOUS DES AUTRES, MAIS TOUT LE TEMPS...
+JE VEUX QUE S'IL METTE QUAND L'ECRAN SE REDUIT...
+@media (min-width: 480px) {
+  #le_form {
+    display: inline-block;
+    width: 18%;
+  }
+}
+*/
