@@ -10,16 +10,15 @@ header {
 }
 #entete {
   color: rgb(168, 127, 23);
-  margin-bottom: 5%;
+  margin-bottom: 2%;
   padding: 2%;
   box-shadow: 5px 5px 5px rgb(103, 103, 105),
     -0.5em -0.5em 2em rgb(102, 112, 112);
   background-color: #ffffff;
-  font-size: 30px;
   text-align: center;
   border-radius: 10px;
   border: 2px solid rgb(168, 127, 23);
-  font-family: arial;
+  font-family: verdana;
 }
 content {
   margin-top: 6%;
@@ -27,15 +26,13 @@ content {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-gap: 3%;
-  grid-auto-rows: 30%;
+  grid-auto-rows: 28%;
   grid-template-areas:
     "e a a a ."
     ". b b b ."
     ". b b b ."
     ". b b b .";
   align-items: center;
-  /*grid-template-columns: 40px 50px auto 50px 40px;
-  grid-template-rows: 25% 100px auto;*/
 }
 #logo {
   grid-area: e;
@@ -44,48 +41,46 @@ content {
 
 #chiffrage {
   grid-area: b;
-  height: 95%;
+  height: 89%;
   width: 95%;
   align-self: center;
   justify-self: center;
-  padding: 2%;
+  padding: 5%;
   box-shadow: 4px 4px 2px rgb(103, 103, 105),
     -0.4em -0.6em 2em rgb(102, 112, 112);
   background-color: #ffffff;
   border-radius: 10px;
   border: 7px solid rgb(168, 127, 23);
 }
-h1 h2 {
-  font-family: arial;
-  font-size: 10px;
+h1 {
+  font-family: verdana;
+  font-size: 100%;
+}
+h2 {
+  font-family: verdana;
+  font-size: 100%;
 }
 h3 {
-  font-size: 110%;
+  font-size: 100%;
 }
 p {
-  font-family: arial;
+  font-family: verdana;
 }
 
 #le_form {
+  display: inline-block;
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-gap: 8%;
-  grid-auto-rows: 26%;
-  grid-template-areas:
-    ". . . . ."
-    ". a . b ."
-    ". . . . ."
-    ". c . d ."
-    ". . . . .";
+  grid-gap: 3%;
   align-items: center;
   justify-content: center;
-  padding-right: 13%;
+  padding: auto;
+  margin-bottom: 5%;
 }
 
 #div_depot {
   height: auto;
-  width: 190%;
-  grid-area: a;
+  width: 50%;
+  /*grid-area: a;*/
   text-align: center;
   background-color: rgb(126, 135, 175);
   padding-bottom: 10%;
@@ -93,8 +88,8 @@ p {
 }
 #div_rate {
   height: auto;
-  width: 190%;
-  grid-area: b;
+  width: 50%;
+  /*grid-area: b;*/
   text-align: center;
   background-color: rgb(126, 135, 175);
   padding-bottom: 10%;
@@ -102,8 +97,8 @@ p {
 }
 #div_objectif {
   height: auto;
-  width: 190%;
-  grid-area: c;
+  width: 50%;
+  /*grid-area: c;*/
   text-align: center;
   background-color: rgb(126, 135, 175);
   padding-bottom: 10%;
@@ -111,15 +106,15 @@ p {
 }
 #div_resultat {
   height: auto;
-  width: 190%;
-  grid-area: d;
+  width: 50%;
+  /*grid-area: d;*/
   text-align: center;
   background-color: rgb(126, 135, 175);
   padding-bottom: 10%;
   border-radius: 5px;
 }
 input {
-  width: 70%;
+  width: 40%;
   height: 120%;
 }
 
@@ -152,39 +147,35 @@ input {
   justify-content: flex-start;
   background-color: rgb(168, 127, 23);
   margin-top: 9%;
-  height: 140%;
+  height: 120%;
   width: 100%;
 }
 
 #bouton_calcul {
   background-color: rgb(28, 32, 52);
   color: #ffffff;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: verdana;
   width: 60%;
   height: 120%;
 }
-
-@media screen and (min-width: 480px) {
+/* Quand l'ecran passe au dela de 550px, les elements se definissent comme décrit dans le @media*/
+@media screen and (min-width: 550px) {
   /* phone < 640px */
   h3,
   p,
   input {
     font-size: 14px;
   }
-}
-
-@media (min-width: 480px) {
+  #le_form {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10%;
+    width: 100%;
+  }
+  #chiffrage {
+    height: auto;
+  }
   h1,
   h2 {
     font-size: 18px;
   }
 }
-/* PERMET DE METTRE LES DIV LES UNES EN DESSOUS DES AUTRES, MAIS TOUT LE TEMPS...
-JE VEUX QUE S'IL METTE QUAND L'ECRAN SE REDUIT...
-@media (min-width: 480px) {
-  #le_form {
-    display: inline-block;
-    width: 18%;
-  }
-}
-*/

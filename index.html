@@ -25,25 +25,25 @@
 
         <form id="le_form" onsubmit="CalculProfit(event)">
 <!-- ONSUBMIT est un EVENT donc en PARAMETRE de ONSUBMIT aussi-->
-            <div id="div_depot">
+            <div id="div_depot" style ="float : left; width: 100%;">
               <h3>DEPOSIT</h3>
                 <label id="deposit_label">Your Deposit : </label>
                     <input id ="deposit_input" type ="number" placeholder="=> ICI : 0.00" step="0.01" name="Deposit" size="5"/></input>
             </div>
 
-            <div id="div_rate">   
+            <div id="div_rate" style ="float : left; width: 100%;">   
               <h3>RATE</h3>
                 <label id="rate_label">Your desired Rate :</label>
                     <input id="rate_input" type ="number" placeholder="=> ICI : 0.00" step="0.01" name="Rate" size="5"/></input>
             </div>
 
-            <div id="div_objectif">
+            <div id="div_objectif" style ="float : left; width: 100%;">
               <h3>OBJECTIVE</h2>
                 <label id="objectif_label">At the end...</label>
                     <input id="threshold_input" type ="number" placeholder="=> ICI : 0.00" name="Threshold" size="5"/> </input>                   
             </div>           
             
-            <div id="div_resultat">
+            <div id="div_resultat" style ="float : left; width: 100%;">
               <h3>DREAMING...</h3>
                 <label id="resultat_label">RESULT :        </label>
                     <div id="resultat_ouput"></div> 
